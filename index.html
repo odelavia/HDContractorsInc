@@ -1,35 +1,317 @@
 <!DOCTYPE html>
-<html>
+<!-- declares language of webpage to assist search engines and browsers. declare all classes, its good practice -->
+<html lang="en" class="">
 	<head>
+		<!-- specifies the character encoding for HTML to Unicode -->
+		<meta charset="UTF-8">
+		<!-- Sets the viewport to make website look good on all devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- define author -->
+		<meta name ="author" content="Oliver De La Via">
+		<!-- defines keywords for search engine -->
+		<meta name="keywords" content="General Contractor, Home Renovation, Construction, Painter">
+		<!-- Disable tap highlight on IE -->
+ 		<meta name="msapplication-tap-highlight" content="no">
+
 		<title>HD Contractors Inc</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="assets/stylesheet/app.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	</head>
 	<body>
 		<!-- nav bar/header -->
-		<header id="header" class="">
-			<div>
-
+		<header id="header">
+			<!-- container holding nav bar, logo, and social media buttons -->
+			<div class="header-inner">
+				<!-- navbar menu -->
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<!-- left menu -->
+							<ul class="navbar-nav" id="HDContract Left Menu" >
+								<li class="nav-item active"><a href="http://www.hdcontracting.com/" title="Home">Home<span class="sr-only">(current)</span></a></li>
+								<li class="nav-item><a href="http://www.hdcontracting.com/what-we-do/" title="What We Do">What We Do</a></li>
+								<li class="nav-item><a href="http://www.hdcontracting.com/our-work/" title="Our Work">Our Work</a></li>
+							</ul>
+							<!-- logo -->
+							<div class="logo">
+									<!-- redirect to home page after clicking on logo -->
+									<a class="navbar-brand" href="http://www.hdcontracting.com/">
+										<img src="Logoimgexample.png" width="30" height="30" alt="">
+									</a>
+							</div>
+							<!-- right menu -->
+							<ul id="HDContract right Menu" class="">
+								<!-- dropdown menu containig about us, our process, and blog -->
+								<li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="http://www.hdcontracting.com/about-us/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          About Us
+					        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					          <a class="dropdown-item" href="http://www.hdcontracting.com/our-process/" title="Our Process">Our Process</a>
+					          <a class="dropdown-item" href="http://www.hdcontracting.com/blog/" title="Our Process">Blog</a>
+					        </div>
+					      </li>
+								<li><a href="http://www.hdcontracting.com/contact-us/" title="Contact Us">Contact Us</a></li>
+								<li><a href="http://www.hdcontracting.com/client-login/" title="Client Login">Client Login</a></li>
+							</ul>
+						</ul>
+					</div>
+				</nav>
+				<!-- end navbar menu -->
+				<!-- social media links -->
+				<div class="social-media">
+					social media
+				</div>
 			</div>
-		</header><!-- banner -->
+		</header>
+
+		<!-- banner -->
 		<div class="cover-banner">
 			<h1>OUR PASSION IS BEAUTIFYING<br/> HOMES AND DELIVERING SMILES<br/> WHICH ARE WORTH A THOUSAND<br/> WORDS</h1>
 		</div>
-		<!-- content -->
-		<div class="content">
 
+		<!-- site content -->
+		<div class="section-container">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-xs-12 col-md-12 section-container-spacer">
+		                <h2 class="text-center">What We Do</h2>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-xs-12 col-md-4">
+		                <div class="fa-container">
+		                    <i class="fa fa-comment-o fa-3x" aria-hidden="true"></i>
+		                </div>
+		                <h3 class="text-center">Additions</h3>
+		                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+		            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		            proident.</p>
+		            </div>
+
+		            <div class="col-xs-12 col-md-4">
+		                <div class="fa-container">
+		                    <i class="fa fa-heart-o fa-3x" aria-hidden="true"></i>
+		                </div>
+		                <h3 class="text-center">Renovations</h3>
+		                <p>Ut enim ad minim veniam,
+		            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		            consequat.</p>
+		            </div>
+		            <div class="col-xs-12 col-md-4">
+		                <div class="fa-container">
+		                    <i class="fa fa-bell-o fa-3x" aria-hidden="true"></i>
+		                </div>
+		                <h3 class="text-center">Gut Rehabs</h3>
+		                <p> Ut enim ad minim veniam,
+		            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		            consequat.</p>
+		            </div>
+		        </div>
+		    </div>
 		</div>
+
+		<div class="section-container section-half-background-image-container">
+		    <div class="image-column" style="background-image: url('./assets/images/img-01.jpg')"></div>
+		    <div class="container">
+		        <div class="row">
+		            <div class="section-label reveal">
+		                <p>Coworking</p>
+		            </div>
+		            <div class="col-md-6 col-md-offset-6 text-column-right">
+		                <h2>5-star rated company</h2>
+		                <h3>Lorem ipsum</h3>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor. Phasellus ut
+		                    lacus tellus. In pretium lobortis blandit. Nam eu laoreet velit. Vivamus laoreet, sem nec scelerisque
+		                    elementum, dui augue aliquet urna, ut bibendum purus erat ut massa. Mauris diam orci, feugiat a turpis
+		                    et, congue accumsan risus. Nulla malesuada leo sodales, auctor augue quis, condimentum lacus. Phasellus
+		                    sed sollicitudin quam, a bibendum urna.</p>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor. Phasellus «
+		                    ut lacus » tellus. In pretium lobortis blandit.</p>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor. Phasellus ut
+		                    lacus tellus. In pretium lobortis blandit.</p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		<!-- image gallery -->
+		<div class="section-container">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-xs-12 col-md-12 section-container-spacer">
+		                <h2 class="text-center">Our Work</h2>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-xs-12 col-md-4">
+		                <img src="./assets/images/img-02.jpg" alt="" class="img-responsive">
+		                <h3 class="text-center">Consectetur</h3>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor. Phasellus ut
+		                    lacus tellus. In pretium lobortis blandit.</p>
+		            </div>
+
+		            <div class="col-xs-12 col-md-4">
+		                <img src="./assets/images/img-03.jpg" alt="" class="img-responsive">
+		                <h3 class="text-center">Malesuada</h3>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor. Phasellus ut
+		                    lacus tellus. In pretium lobortis blandit.</p>
+		            </div>
+		            <div class="col-xs-12 col-md-4">
+		                <img src="./assets/images/img-04.jpg" alt="" class="img-responsive">
+		                <h3 class="text-center">Phasellus</h3>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor. Phasellus ut
+		                    lacus tellus. In pretium lobortis blandit.</p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="section-container">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-xs-12 col-md-12 section-container-spacer">
+		                <h2 class="text-center">Our Blog</h2>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-xs-12 col-md-4">
+		                <img src="./assets/images/img-02.jpg" alt="" class="img-responsive">
+		                <h3 class="text-center">Consectetur</h3>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor. Phasellus ut
+		                    lacus tellus. In pretium lobortis blandit.</p>
+		            </div>
+
+		            <div class="col-xs-12 col-md-4">
+		                <img src="./assets/images/img-03.jpg" alt="" class="img-responsive">
+		                <h3 class="text-center">Malesuada</h3>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor. Phasellus ut
+		                    lacus tellus. In pretium lobortis blandit.</p>
+		            </div>
+		            <div class="col-xs-12 col-md-4">
+		                <img src="./assets/images/img-04.jpg" alt="" class="img-responsive">
+		                <h3 class="text-center">Phasellus</h3>
+		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor. Phasellus ut
+		                    lacus tellus. In pretium lobortis blandit.</p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<!-- map container -->
+		<div class="">
+		    <div class='container-fluid'>
+		        <div class="row map-container">
+		            <div id="map"></div>
+		            <div class="col-xs-10 col-md-4 contact-block-container reveal">
+		                <div class="row">
+		                    <div class="col-xs-12 col-sm-6">
+		                        <h3>Phone</h3>
+		                        <p>571 123 4567</p>
+		                        <h3>E-mail</h3>
+		                        <p>hdcontracting@hotmail.com</p>
+		                    </div>
+
+		                    <div class="col-xs-12 col-sm-6">
+		                        <h3>Address</h3>
+		                        <p>Arlington, VA</p>
+
+		                        <h3>Open hours</h3>
+		                        <p>Mon - Sat : 7AM - 6PM</p>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
 		<!-- contact input form -->
-		<div class="get-form">
+		<div class="section-container" id="contact-section-container">
+		    <div class="container contact-form-container">
+		        <div class="row">
+		            <div class="col-xs-12 col-md-offset-2 col-md-8">
+		                <div class="section-container-spacer">
+		                    <h2 class="text-center">Get in touch</h2>
+		                </div>
+		                <form action="">
+		                    <div class="row">
+		                        <div class="col-md-6">
+		                            <div class="form-group">
+		                                <input type="text" name="name" class="form-control" placeholder="Name">
+		                            </div>
+		                        </div>
+		                        <div class="col-md-6">
+		                            <div class="form-group">
+		                                <input type="email" name="email" class="form-control" placeholder="Email">
+		                            </div>
+		                        </div>
+		                    </div>
 
+		                    <div class="form-group">
+		                        <textarea class="form-control" rows="3" placeholder="Enter your message"></textarea>
+		                    </div>
+
+		                    <div class="form-group">
+		                        <label class="checkbox-inline">
+		                            <input type="checkbox" id="inlineCheckbox1" value="option1">Email me a copy
+		                        </label>
+		                        <label class="checkbox-inline">
+		                            <input type="checkbox" id="inlineCheckbox2" value="option2">I am a human
+		                        </label>
+		                    </div>
+
+		                    <button type="submit" class="btn btn-primary">Send message</button>
+		                    <a href="" class="btn btn-default">Reset</a>
+		                </form>
+		            </div>
+		        </div>
+		    </div>
 		</div>
+
 		<footer>
 		<!-- footer banner/contact info -->
 			<div class="container text-center">
-				<div>
+        <div class="row">
+          <div class="col-md-4">
+	          <h4>About us</h4>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor</p>
+          </div>
 
-				</div>
-			</div>
+          <div class="col-md-4">
+            <h4>Share this !</h4>
+            <div>
+              <p>
+                <a href="https://www.twitter.com" class="fa-icon" title="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+                <a href="https://www.facebook.com" class="fa-icon" title="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com" class="fa-icon" title="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </p>
+            </div>
+            <div>
+              <p><small>© Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+              <h4>Subscribe to newsletter</h4>
+
+              <div class="form-group">
+                  <div class="input-group">
+                      <input type="text" class="form-control footer-input-text">
+                      <div class="input-group-btn">
+                          <button type="button" class="btn btn-default btn-newsletter ">OK</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+    	</div>
 			<!-- copyright and author info -->
 			<div class="copyright-text text-center">
 				<p>© Copyright 2018 HD Contracting Inc. All rights reserved.</p>
