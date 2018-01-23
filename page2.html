@@ -5,7 +5,7 @@
 		<!-- specifies the character encoding for HTML to Unicode -->
 		<meta charset="UTF-8">
 		<!-- Sets the viewport to make website look good on all devices -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 		<!-- define author -->
 		<meta name ="author" content="Oliver De La Via">
 		<!-- defines keywords for search engine -->
@@ -13,51 +13,51 @@
 		<!-- Disable tap highlight on IE -->
  		<meta name="msapplication-tap-highlight" content="no">
 
-		<title>What We Do</title>
+		<title>HD Contractors Inc</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="assets/stylesheet/app.css" rel="stylesheet" type="text/css" />
+		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- nav bar/header -->
-		<header id="header">
-			<!-- container holding nav bar, logo, and social media buttons -->
-			<div class="header-inner">
-				<!-- navbar menu -->
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<div class="collapse navbar-collapse" id="navbarNavDropdown">
-						<ul class="navbar-nav">
-							<!-- left menu -->
-							<ul class="navbar-nav" id="HDContract Left Menu" >
-								<li class="nav-item active"><a href="http://www.hdcontracting.com/" title="Home">Home<span class="sr-only">(current)</span></a></li>
-								<li class="nav-item><a href="http://www.hdcontracting.com/what-we-do/" title="What We Do">What We Do</a></li>
-								<li class="nav-item><a href="http://www.hdcontracting.com/our-work/" title="Our Work">Our Work</a></li>
-							</ul>
-							<!-- logo -->
-							<div class="logo">
-									<!-- redirect to home page after clicking on logo -->
-									<a class="navbar-brand" href="http://www.hdcontracting.com/">
-										<img src="Logoimgexample.png" width="30" height="30" alt="">
-									</a>
-							</div>
-							<!-- right menu -->
-							<ul id="HDContract right Menu" class="">
-								<!-- dropdown menu containig about us, our process, and blog -->
-								<li class="nav-item dropdown">
-					        <a class="nav-link dropdown-toggle" href="http://www.hdcontracting.com/about-us/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					          About Us
-					        </a>
-					        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					          <a class="dropdown-item" href="http://www.hdcontracting.com/our-process/" title="Our Process">Our Process</a>
-					          <a class="dropdown-item" href="http://www.hdcontracting.com/blog/" title="Our Process">Blog</a>
-					        </div>
-					      </li>
-								<li><a href="http://www.hdcontracting.com/contact-us/" title="Contact Us">Contact Us</a></li>
-								<li><a href="http://www.hdcontracting.com/client-login/" title="Client Login">Client Login</a></li>
-							</ul>
-						</ul>
-					</div>
-				</nav>
+		<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+		  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		    <a class="navbar-brand my-0 mr-md-auto font-weight-normal href="#"><i class="fas fa-paint-brush"></i>Logo</a>
+		    <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <nav class="my-2 my-md-0 mr-md-3">
+		      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		        <ul class="navbar-nav mr-auto">
+		          <li class="nav-item">
+		            <a class="nav-link" href="#">What We Do</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#">Our Work</a>
+		          </li>
+		          <li class="nav-item dropdown">
+		            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		              About us
+		            </a>
+		            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		              <a class="dropdown-item" href="#">Our Process</a>
+		              <div class="dropdown-divider"></div>
+		              <a class="dropdown-item" href="#">Blog</a>
+		            </div>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#">Contact Us</a>
+		          </li>
+		        </ul>
+		        <form class="form-inline my-2 my-lg-0">
+		          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Client Login</button>
+		        </form>
+		      </div>
+		    </nav>
+		  </nav>
+		</div>
 				<!-- end navbar menu -->
 				<!-- social media links -->
 				<div class="social-media">
